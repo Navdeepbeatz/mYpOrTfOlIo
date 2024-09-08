@@ -537,32 +537,44 @@ header #burger-menu {
   justify-content: center;
 }
 
-/* contact section */
+/* Styling for the entire contact section */
+#contact {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+/* Contact title styling */
+.contact-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
 
 /* Container to center the form */
 .form-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background-color: #f0f0f0;
 }
 
 /* Form styling */
 .styled-form {
   width: 100%;
   max-width: 500px;
-  padding: 20px;
+  padding: 30px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
 }
 
 /* Label styling */
 .styled-form label {
   display: block;
   font-size: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-weight: bold;
   color: #333;
 }
@@ -587,7 +599,7 @@ header #burger-menu {
 /* Button styling */
 .form-btn {
   width: 100%;
-  padding: 12px;
+  padding: 14px;
   background-color: #007bff;
   border: none;
   border-radius: 4px;
@@ -606,6 +618,18 @@ header #burger-menu {
 .form-textarea {
   min-height: 120px;
   resize: vertical;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .styled-form {
+      padding: 20px;
+      max-width: 100%;
+  }
+
+  .contact-title {
+      font-size: 28px;
+  }
 }
 
 /* footer section */
