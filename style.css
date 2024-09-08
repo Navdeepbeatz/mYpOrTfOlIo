@@ -539,51 +539,73 @@ header #burger-menu {
 
 /* contact section */
 
-.contact-title {
+/* Container to center the form */
+.form-container {
   display: flex;
   justify-content: center;
-  font-size: 3rem;
-  margin-bottom: 8rem;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
 }
 
-.message .row {
-  display: flex;
-  background: #fff;
-  margin: 3rem 8rem;
-  overflow: hidden;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-  border-radius: 1rem;
-  min-height: 70vh;
-}
-
-.message .row .image {
-  flex: 1 1 50%;
-}
-
-.message .row .image img {
-  height: 100%;
+/* Form styling */
+.styled-form {
   width: 100%;
-  object-fit: cover;
+  max-width: 500px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-.message .row form {
-  flex: 1 1 50%;
-  background: #fff;
-  padding: 3rem;
+/* Label styling */
+.styled-form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
 }
 
-.message .row form .box {
-  padding: 1rem;
-  margin: 1rem 0;
-  font-size: 1.5rem;
-  color: var(--dark);
-  text-transform: none;
-  background: #f0f0f0;
+/* Input fields styling */
+.form-input, .form-textarea {
   width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
 }
 
-.message .row form .box::placeholder {
-  text-transform: capitalize;
+/* Focus state for input fields */
+.form-input:focus, .form-textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button styling */
+.form-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.form-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Textarea height adjustment */
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
 }
 
 /* footer section */
